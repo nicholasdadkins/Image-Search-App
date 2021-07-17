@@ -21,11 +21,9 @@ function apiRequest() {
     }
   });
 }
-
   document.getElementById('search-button').addEventListener('click', () => {
     console.log('the search button was clicked!')
     apiRequest()
 
   })
-
 });

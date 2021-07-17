@@ -3,13 +3,33 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>repl.it</title>
+    <title>Giphy Search Engine</title>
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
 
     <link href="style.css" rel="stylesheet" type="text/css" />
     <script src="main.js"></script>
   </head>
   <body>
+<header>
+      <nav class="grid grid-cols-12 w-full border-b">
+        <div class="col-span-6 p-4 pl-8 text-4xl font-medium">
+          <span>Adkins</span><span>GIPHY</span><span class="text-blue-500">Search</span>
+        </div>
+        <div class="col-span-6 p-4">
+          <ul class='float-right'>
+            <li class='inline mr-4'>
+              <a href="index.html" class="uppercase text-2xl text-blue-500">Search</a>
+            </li>
+            <li class='inline mr-4'>
+              <a href="about.html" class="uppercase text-2xl text-gray-500">About</a>
+            </li>
+            <li class='inline'>
+              <a href="contact.html" class="uppercase text-2xl text-gray-500">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
     <div class="flex justify-center p-2">
       <input id='search-input' type="text" class="border p-1 w-1/2 mr-4" />
