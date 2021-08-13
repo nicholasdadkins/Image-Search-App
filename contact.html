@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Giphy Search Engine</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <script src=></script>
+  </head>
+    <header>
+      <nav class="grid grid-cols-7 w-full border-b">
+        <div id=pagetitle class="col-span-3 pr-4 pl-4 text-4xl font-medium">
+          <span>Adkins</span>
+          <span>GIPHY</span>
+          <span class="text-blue-500 ">Search</span>
+        </div>
+
+        <div class="col-span-4 pr-8 pl-8">
+          <ul id=navigation class='float-right pl-7'>
+            <li class='inline mr-4'>
+              <a href="index.html" class="uppercase text-2xl text-gray-500 pr-4">Search</a>
+            </li>
+            <li class='inline mr-4'>
+              <a href="about.html" class="uppercase text-2xl text-gray-500 pr-4">About</a>
+            </li>
+            <li class='inline'>
+              <a href="contact.html" class="uppercase text-2xl text-blue-500 pr-4">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <h1 class="text-center text-5xl mt-8 text-blue-400">Contact</h1>
+<article>
+  <section class='m-4'>
+    <div class="mt-10 sm:mt-0">
+      <div class="md:grid md:grid-cols-3 md:gap-6">
+        <div class="md:col-span-1">
+          <div class="px-4 sm:px-0">
+            <h3 class="text-2xl font-medium text-gray-900">Contact</h3>
+            <p class="mt-1 text-xl text-gray-600">
+              Webpage suggestions
+            </p>
+          </div>
+        </div>
+        <div class="mt-5 md:mt-0 md:col-span-2">
+          <form id="contact_form" action="https://formspree.io/f/xjvjrbdv" method="POST">
+            <div class="shadow overflow-hidden sm:rounded-md">
+              <div class="px-4 py-5 bg-white sm:p-6">
+                <div class="grid grid-cols-6 gap-6">
+                  <div class="col-span-6 sm:col-span-3">
+                    <label for="first_name" class="required block text-xl font-medium text-gray-700">First name</label>
+                    <input type="text" name="first_name" id="first_name" autocomplete="given-name" 
+                    class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-xl border-gray-300 rounded-md">
+                  </div>
+    
+                  <div class="col-span-6 sm:col-span-3">
+                    <label for="last_name" class="block text-xl font-medium text-gray-700">Last name</label>
+                    <input type="text" name="last_name" id="last_name" autocomplete="family-name" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-xl border-gray-300 rounded-md">
+                  </div>
+    
+                  <div class="col-span-6 sm:col-span-4">
+                    <label for="email" class="required block text-xl font-medium text-gray-700">Email address</label>
+                    <input type="email" name="email" id="email" autocomplete="email" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-xl border-gray-300 rounded-md">
+                  </div>
+    
+                  <div class="col-span-6">
+                    <label for="text" class="required block text-xl font-medium text-gray-700">Suggestion for improvement</label>
+                    <input type="text" name="topic" id="topic" autocomplete="topic" class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-xl border-gray-300 rounded-md">
+                  </div>
+    
+                </div>
+              </div>
+              <div class="px-4 py-3 bg-gray-50 text-right sm:px-6">
+                <button type="submit" class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-xl font-medium rounded-md text-white bg-blue-800 hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                  Submit
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</article>
+    
+<footer class='m-4'>
+<p><span>ADKINS</span><span>GIPHY</span><span class="text-blue-500">SEARCH</span></p>
+</footer>
